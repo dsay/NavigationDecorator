@@ -10,6 +10,8 @@
 		CE93DBAA1ECC39CC00D0E79D /* NavigationDecorator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE93DBA01ECC39CB00D0E79D /* NavigationDecorator.framework */; };
 		CE93DBAF1ECC39CC00D0E79D /* NavigationDecoratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE93DBAE1ECC39CC00D0E79D /* NavigationDecoratorTests.swift */; };
 		CE93DBB11ECC39CC00D0E79D /* NavigationDecorator.h in Headers */ = {isa = PBXBuildFile; fileRef = CE93DBA31ECC39CB00D0E79D /* NavigationDecorator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE93DBBB1ECC3C0700D0E79D /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE93DBBA1ECC3C0700D0E79D /* NavigationController.swift */; };
+		D1E1A8D742B7BC7C3A14379E /* Pods_NavigationDecorator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 550E9E5881D9D1EB7DC47B6B /* Pods_NavigationDecorator.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,12 +25,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1E8DB41F7DECA96DF37973ED /* Pods-NavigationDecorator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NavigationDecorator.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NavigationDecorator/Pods-NavigationDecorator.debug.xcconfig"; sourceTree = "<group>"; };
+		2ECF6E8ABFFAF072990BA134 /* Pods-NavigationDecorator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NavigationDecorator.release.xcconfig"; path = "Pods/Target Support Files/Pods-NavigationDecorator/Pods-NavigationDecorator.release.xcconfig"; sourceTree = "<group>"; };
+		550E9E5881D9D1EB7DC47B6B /* Pods_NavigationDecorator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NavigationDecorator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE93DBA01ECC39CB00D0E79D /* NavigationDecorator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NavigationDecorator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE93DBA31ECC39CB00D0E79D /* NavigationDecorator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NavigationDecorator.h; sourceTree = "<group>"; };
 		CE93DBA41ECC39CB00D0E79D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE93DBA91ECC39CC00D0E79D /* NavigationDecoratorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NavigationDecoratorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE93DBAE1ECC39CC00D0E79D /* NavigationDecoratorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationDecoratorTests.swift; sourceTree = "<group>"; };
 		CE93DBB01ECC39CC00D0E79D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE93DBBA1ECC3C0700D0E79D /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1E1A8D742B7BC7C3A14379E /* Pods_NavigationDecorator.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,12 +57,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0EA297D7937E823187B1110E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				550E9E5881D9D1EB7DC47B6B /* Pods_NavigationDecorator.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6818433AF5C795D23FCFCC81 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1E8DB41F7DECA96DF37973ED /* Pods-NavigationDecorator.debug.xcconfig */,
+				2ECF6E8ABFFAF072990BA134 /* Pods-NavigationDecorator.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		CE93DB961ECC39CB00D0E79D = {
 			isa = PBXGroup;
 			children = (
 				CE93DBA21ECC39CB00D0E79D /* NavigationDecorator */,
 				CE93DBAD1ECC39CC00D0E79D /* NavigationDecoratorTests */,
 				CE93DBA11ECC39CB00D0E79D /* Products */,
+				6818433AF5C795D23FCFCC81 /* Pods */,
+				0EA297D7937E823187B1110E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +97,7 @@
 		CE93DBA21ECC39CB00D0E79D /* NavigationDecorator */ = {
 			isa = PBXGroup;
 			children = (
+				CE93DBBA1ECC3C0700D0E79D /* NavigationController.swift */,
 				CE93DBA31ECC39CB00D0E79D /* NavigationDecorator.h */,
 				CE93DBA41ECC39CB00D0E79D /* Info.plist */,
 			);
@@ -104,10 +131,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE93DBB41ECC39CC00D0E79D /* Build configuration list for PBXNativeTarget "NavigationDecorator" */;
 			buildPhases = (
+				98C21EF344980C918F4FCDF9 /* [CP] Check Pods Manifest.lock */,
 				CE93DB9B1ECC39CB00D0E79D /* Sources */,
 				CE93DB9C1ECC39CB00D0E79D /* Frameworks */,
 				CE93DB9D1ECC39CB00D0E79D /* Headers */,
 				CE93DB9E1ECC39CB00D0E79D /* Resources */,
+				2BC12D26C080286F567D115D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -148,6 +177,7 @@
 				TargetAttributes = {
 					CE93DB9F1ECC39CB00D0E79D = {
 						CreatedOnToolsVersion = 8.3.2;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					CE93DBA81ECC39CC00D0E79D = {
@@ -191,11 +221,45 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2BC12D26C080286F567D115D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NavigationDecorator/Pods-NavigationDecorator-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		98C21EF344980C918F4FCDF9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CE93DB9B1ECC39CB00D0E79D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE93DBBB1ECC3C0700D0E79D /* NavigationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,7 +385,9 @@
 		};
 		CE93DBB51ECC39CC00D0E79D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E8DB41F7DECA96DF37973ED /* Pods-NavigationDecorator.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -333,13 +399,16 @@
 				PRODUCT_BUNDLE_IDENTIFIER = dsay.NavigationDecorator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		CE93DBB61ECC39CC00D0E79D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2ECF6E8ABFFAF072990BA134 /* Pods-NavigationDecorator.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -358,6 +427,7 @@
 		CE93DBB81ECC39CC00D0E79D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = NavigationDecoratorTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = dsay.NavigationDecoratorTests;
@@ -369,6 +439,7 @@
 		CE93DBB91ECC39CC00D0E79D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = NavigationDecoratorTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = dsay.NavigationDecoratorTests;
@@ -396,6 +467,7 @@
 				CE93DBB61ECC39CC00D0E79D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CE93DBB71ECC39CC00D0E79D /* Build configuration list for PBXNativeTarget "NavigationDecoratorTests" */ = {
 			isa = XCConfigurationList;
@@ -404,6 +476,7 @@
 				CE93DBB91ECC39CC00D0E79D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
